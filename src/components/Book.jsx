@@ -9,7 +9,7 @@ const Book = ({ book }) => {
             style={{
               width: "128px",
               height: "193px",
-              backgroundImage: `url(${imageLinks.thumbnail})`,
+              backgroundImage: `url(${imageLinks?.thumbnail})`,
             }}
           ></div>
           <div className="book-shelf-changer">
@@ -25,7 +25,9 @@ const Book = ({ book }) => {
           </div>
         </div>
         <div className="book-title">{title}</div>
-        <div className="book-authors">{authors.join(", ")}</div>
+        <div className="book-authors">
+          {authors === undefined ? "" : authors.join(", ")}
+        </div>
       </div>
     </li>
   );

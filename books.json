@@ -700,46 +700,6 @@
       "id": "U7VJCgAAQBAJ"
     },
     {
-      "title": "Migrating to Android for iOS Developers",
-      "authors": ["Sean Liao"],
-      "publisher": "Apress",
-      "publishedDate": "2014-07-18",
-      "description": "Migrating to Android for iOS Developers gives you—as an experienced native iOS app developer—the skills to learn native Android apps development from scratch. Starting with preparing your Android integrated development environment and introducing just enough Android application framework fundamentals, you’ll understand how to create a simple but meaningful HelloAndroid project immediately. This book provides the guidelines and tutorial projects to show you how to translate your existing iOS app to the Android platform. You’ll use your mobile app knowledge to structure your Android apps in a similar way to how you would structure your iOS apps. To implement use cases with detailed screens, the most common mobile topics are discussed, including user interfaces, managing data, and networking with remote services. As you move through the book, you’ll create Android apps with rich UI components to handle common CRUD operations locally and remotely. There are many Android goodies described in the book. Instead of relying on routine text descriptions, you’ll discover the uniqueness of Android and appreciate the many features that are unique to the platform. This book also explores more powerful mobile UX patterns that are commonly used on the iOS and Android platforms. When you finish reading Migrating to Android for iOS Developers, you’ll be an Android developer as well as an iOS developer. And, you will be fully convinced you can do everything in Android that you can do in iOS.",
-      "industryIdentifiers": [
-        {
-          "type": "ISBN_13",
-          "identifier": "9781484200100"
-        },
-        {
-          "type": "ISBN_10",
-          "identifier": "1484200101"
-        }
-      ],
-      "readingModes": {
-        "text": true,
-        "image": true
-      },
-      "pageCount": 532,
-      "printType": "BOOK",
-      "categories": ["Computers"],
-      "maturityRating": "NOT_MATURE",
-      "allowAnonLogging": false,
-      "contentVersion": "0.4.3.0.preview.3",
-      "panelizationSummary": {
-        "containsEpubBubbles": false,
-        "containsImageBubbles": false
-      },
-      "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=D1EnCgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=D1EnCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-      },
-      "language": "en",
-      "previewLink": "http://books.google.com/books?id=D1EnCgAAQBAJ&pg=PA483&dq=android&hl=&cd=19&source=gbs_api",
-      "infoLink": "https://play.google.com/store/books/details?id=D1EnCgAAQBAJ&source=gbs_api",
-      "canonicalVolumeLink": "https://market.android.com/details?id=book-D1EnCgAAQBAJ",
-      "id": "D1EnCgAAQBAJ"
-    },
-    {
       "title": "Android Quick APIs Reference",
       "authors": ["Onur Cinar"],
       "publisher": "Apress",
