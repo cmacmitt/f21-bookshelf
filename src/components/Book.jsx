@@ -1,5 +1,5 @@
-const Book = ({ book }) => {
-  const { imageLinks, title, authors, shelf } = book;
+const Book = ({ book, updateBook }) => {
+  const { id, imageLinks, title, authors, shelf } = book;
   return (
     <li>
       <div className="book">
@@ -13,7 +13,10 @@ const Book = ({ book }) => {
             }}
           ></div>
           <div className="book-shelf-changer">
-            <select value={shelf}>
+            <select
+              value={shelf}
+              onChange={(event) => updateBook(id, event.target.value)}
+            >
               <option value="move" disabled="">
                 Move to...
               </option>
@@ -25,9 +28,7 @@ const Book = ({ book }) => {
           </div>
         </div>
         <div className="book-title">{title}</div>
-        <div className="book-authors">
-          {authors === undefined ? "" : authors.join(", ")}
-        </div>
+        <div className="book-authors">{authors ? authors.join(", ") : ""}</div>
       </div>
     </li>
   );
