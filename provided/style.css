@@ -18,7 +18,7 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body,
@@ -87,6 +87,7 @@ body,
 .open-search button:hover {
   background-color: rgb(0, 102, 0);
 }
+
 
 /* search page */
 
@@ -213,6 +214,6 @@ button:active {
 }
 
 .results-quantity {
-  font-size: 20px;
+  font-size: 20PX;
   padding-left: 50px;
 }

@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import { getBooks } from "./services/booksAPI";
+import "./App.css";
+import BookShelf from "./components/BookShelf";
+import BookList from "./components/BookList";
 
 function App() {
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    getBooks().then((books) => setBooks(books));
+  }, []);
+
+  const filterBooks = (shelf) => {
+    return books.filter((book) => book.shelf === shelf);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="app">
+        <div className="list-books">
+          <div className="list-books-title">
+            <h1>MITTReads</h1>
+          </div>
+          <div className="list-books-content">
+            <div>
+              <BookShelf name={"Currently Reading"}>
+                <BookList books={filterBooks("currentlyReading")} />
+              </BookShelf>
+              <BookShelf name={"Want to Read"}>
+                <BookList books={filterBooks("wantToRead")} />
+              </BookShelf>
+              <BookShelf name={"Read"}>
+                <BookList books={filterBooks("read")} />
+              </BookShelf>
+              <BookShelf name={"My Library"}>
+                <BookList books={filterBooks("none")} />
+              </BookShelf>
+            </div>
+          </div>
+          <div className="open-search">
+            <a href="search.html">Add a book</a>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
